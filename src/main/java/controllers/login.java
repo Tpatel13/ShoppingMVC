@@ -13,7 +13,8 @@ import java.io.IOException;
 public class login extends javax.servlet.http.HttpServlet {
 
     protected void doGet(HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-
+        HttpSession session=request.getSession();
+        session.invalidate();
       response.sendRedirect("index.jsp");
     }
 
@@ -27,17 +28,20 @@ public class login extends javax.servlet.http.HttpServlet {
 
         String[] data= login.checkLogin(email, password, type);
 
-        if (data!=null) {
-            HttpSession session=request.getSession();
-            User user=new User();
-            user.setId(Integer.parseInt(data[0]));
-            user.setName(data[1]);
-            user.setType(type);
-            session.setAttribute("user",user);
-            response.sendRedirect("/" + type);
-        }
-        else  response.sendRedirect("/login");
+      try {
 
+          HttpSession session = request.getSession();
+          User user = new User();
+          user.setId(Integer.parseInt(data[0]));
+          user.setName(data[1]);
+          user.setType(type);
+          session.setAttribute("user", user);
+          session.setAttribute("name", user.getName());
+          response.sendRedirect("/" + type);
+      }
+      catch(Exception e) {
+         response.sendRedirect("/login");
+      }
 
 
     }

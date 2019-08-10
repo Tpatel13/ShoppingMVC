@@ -6,7 +6,31 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f7452f-8e31-48b6-a53e-90bbbafdf618" name="Default Changelist" comment="" />
+    <list default="true" id="46f7452f-8e31-48b6-a53e-90bbbafdf618" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/getProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/customer/GetAllProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/merchant/merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/merchant/merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/merchant/GetProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/merchant/GetProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/merchant/merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/merchant/merchant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/merchant/GetProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/merchant/GetProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/merchant/merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/merchant/merchant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/dao/merchant/GetProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/dao/merchant/GetProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +48,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -39,7 +66,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1PAnxMkigd7LzpObNs2EhOOBDSW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
@@ -151,12 +182,26 @@
       <workItem from="1565326017951" duration="126000" />
       <workItem from="1565326158012" duration="2242000" />
       <workItem from="1565331798992" duration="10230000" />
-      <workItem from="1565382684957" duration="11058000" />
+      <workItem from="1565382684957" duration="13152000" />
+      <workItem from="1565412335493" duration="6233000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/shoppingsite$Tomcat_8_5_431.ic" NAME="Tomcat 8.5.431 Coverage Results" MODIFIED="1565331772769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

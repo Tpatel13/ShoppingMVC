@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Hii <%=session.getAttribute("type")%></a>
+                    <a class="nav-link disabled" href="#">Hii <%=session.getAttribute("name")%></a>
                 </li>
 
 
@@ -59,7 +59,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             &nbsp &nbsp
-            <form class="form-inline my-2 my-lg-0" action="/logout">
+            <form class="form-inline my-2 my-lg-0" action="/login" method="get">
                 <button type="button" class="btn btn-primary">Logout</button>
             </form>
         </div>
