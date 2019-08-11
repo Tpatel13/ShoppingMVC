@@ -41,7 +41,7 @@
                     <a class="nav-link" href="/admin">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">Merchants</a>
+                    <a class="nav-link" href="/admin/merchants">Merchants</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/products">Products</a>
@@ -74,9 +74,10 @@
         <thead>
         <tr>
             <th scope="col">Product Name</th>
-            <th scope="col"></th>
             <th scope="col">Value</th>
             <th scope="col">Info</th>
+            <th scope="col">MerchantID</th>
+            <th scope="col">ProductID</th>
         </tr>
         </thead>
         <c:forEach items="${requestScope.products}" var="product">
@@ -84,6 +85,9 @@
 
                 <td scope="col"><c:out value="${product.name}" /></td>
                 <td scope="col"><c:out value="${product.price}" /></td>
+                <td scope="col"><c:out value="${product.info}" /></td>
+                <td scope="col"><c:out value="${product.merchantID}" /></td>
+                <td scope="col"><c:out value="${product.productID}" /></td>
             </tr>
         </c:forEach>
     </table>

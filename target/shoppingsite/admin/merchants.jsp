@@ -44,7 +44,7 @@
                     <a class="nav-link" href="/admin">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin">Merchants</a>
+                    <a class="nav-link" href="/admin/merchants">Merchants</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/products">Products</a>

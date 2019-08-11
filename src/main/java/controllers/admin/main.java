@@ -24,12 +24,11 @@ public class main extends HttpServlet {
         User user = null;
         user = (User) session.getAttribute("user");
 
-        if (user == null) {
+        if (!user.getType().equals("admin")) {
             response.sendRedirect("/login");
         } else {
-            GetAllProducts products = new GetAllProducts();
 
-            request.setAttribute("products", products.getAllProducts());
+            request.setAttribute("products", new GetAllProducts().getAllProducts());
             RequestDispatcher rd = request.getRequestDispatcher("admin.jsp");
             rd.forward(request, response);
 
