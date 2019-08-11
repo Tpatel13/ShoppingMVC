@@ -1,8 +1,8 @@
 package models;
 
 public class Product {
-    private double price;
 
+    private double price;
     private int  merchantID,productID;
     private String name,info;
 
@@ -14,12 +14,14 @@ public class Product {
 
 
 
+
     public Product(double price, String name, String info, int productID, int merchantID) {
         this.price = price;
         this.name = name;
         this.info = info;
         this.merchantID=merchantID;
         this.productID=productID;
+
     }
     public int getMerchantID() {
         return merchantID;

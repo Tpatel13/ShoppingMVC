@@ -49,7 +49,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Hii</a>
+                <a class="nav-link disabled" href="#">Hii<%=session.getAttribute("name")%></a>
             </li>
 
 
@@ -65,17 +65,17 @@
         </form>
         &nbsp &nbsp
         <form class="form-inline my-2 my-lg-0" action="/login" method="get">
-            <button type="button" class="btn btn-primary">Logout</button>
+            <button type="submit" class="btn btn-primary">Logout</button>
         </form>
     </div>
 </nav>
 
-<div>
+<div class="container">
     <table class="table">
         <thead>
         <tr>
             <th scope="col">Product Name</th>
-            <th scope="col"></th>
+
             <th scope="col">Value</th>
             <th scope="col">Info</th>
         </tr>
@@ -85,7 +85,7 @@
 
                 <td scope="col"><c:out value="${product.name}" /><td>
                 <td scope="col"><c:out value="${product.price}" /><td>
-                <td scope="col"><c:out value="${product.info}" /><td>
+<%--                <td scope="col"><c:out value="${product.total}" /><td>--%>
                 <td scope="col"><a href="<c:url value="/addToCart?id=${product.productID}"/>" /><button type="button" class="btn btn-success">Buy</button></a></td>
             </tr>
         </c:forEach>

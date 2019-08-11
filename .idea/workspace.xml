@@ -7,29 +7,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f7452f-8e31-48b6-a53e-90bbbafdf618" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/getProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/customer/GetAllProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/customer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GetProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/merchant/GetAllMerchants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/merchants.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dao/GetProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/dao/GetProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/getProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/getProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/merchants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/merchant/merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/merchant/merchant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/merchant/GetProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/merchant/GetProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Merchant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/merchant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/merchant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/shopping2.0.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/admin/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/admin/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/getProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/getProducts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/logout.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/merchant/merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/merchant/merchant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/merchant/GetProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/merchant/GetProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Merchant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/getProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/getProducts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/logout.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/merchant/merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/merchant/merchant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/dao/merchant/GetProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/dao/merchant/GetProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Merchant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/models/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/merchant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/merchant.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +67,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaeeView">
+    <option name="showModules" value="false" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -73,10 +100,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
@@ -95,8 +129,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.431" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.431" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="shopping2.0:war exploded">
@@ -183,7 +215,15 @@
       <workItem from="1565326158012" duration="2242000" />
       <workItem from="1565331798992" duration="10230000" />
       <workItem from="1565382684957" duration="13152000" />
-      <workItem from="1565412335493" duration="6233000" />
+      <workItem from="1565412335493" duration="10007000" />
+      <workItem from="1565464936577" duration="39000" />
+      <workItem from="1565465960651" duration="53000" />
+      <workItem from="1565466288560" duration="267000" />
+      <workItem from="1565466570755" duration="3000" />
+      <workItem from="1565466604914" duration="418000" />
+      <workItem from="1565467592028" duration="1966000" />
+      <workItem from="1565470995535" duration="1507000" />
+      <workItem from="1565472537855" duration="8588000" />
     </task>
     <servers />
   </component>

@@ -17,6 +17,7 @@ public class register extends HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         String password2 = request.getParameter("confirm_password");
+
         String email = request.getParameter("email");
         String type = request.getParameter("type");
 
@@ -26,8 +27,6 @@ public class register extends HttpServlet {
 
             response.sendRedirect("/login");
         }
-
-
 
 
     }

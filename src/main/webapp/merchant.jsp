@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Hii</a>
+                    <a class="nav-link disabled" href="#">Hii <%=session.getAttribute("name")%></a>
                 </li>
 
 
@@ -60,7 +60,7 @@
             </form>
             &nbsp &nbsp
             <form class="form-inline my-2 my-lg-0" action="/logout">
-                <button type="button" class="btn btn-primary">Logout</button>
+                <button type="submit" class="btn btn-primary">Logout</button>
             </form>
         </div>
     </nav>

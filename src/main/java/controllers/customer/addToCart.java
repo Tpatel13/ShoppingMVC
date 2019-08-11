@@ -1,5 +1,8 @@
 package controllers.customer;
 
+import dao.GetProduct;
+import models.Product;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,20 +22,43 @@ public class addToCart extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
 
-        String productID = request.getParameter("id");
-        HashMap<Integer,Integer> cart = (HashMap<Integer, Integer>) session.getAttribute("cart");
-        request.getSession().removeAttribute("cart");
-        System.out.println(cart.containsValue(Integer.parseInt(productID)));
-        if(cart.containsValue(Integer.parseInt(productID))){
-            Integer i=cart.get(Integer.parseInt(productID))+1;
-            cart.put(Integer.parseInt(productID),i);
+        HttpSession session=request.getSession();
+
+
+        if(request.getSession()==null){
+            response.sendRedirect("login");
         }
-        else cart.put(Integer.parseInt(productID),1);
+        int productID = Integer.parseInt(request.getParameter("id"));
+
+        HashMap<Integer,Integer> cart = (HashMap<Integer, Integer>) session.getAttribute("cart");
+
+        request.getSession().removeAttribute("cart");
+
+        GetProduct product=new GetProduct();
+
+
+
+
+        if(cart.containsKey(productID))
+        {
+            System.out.println("updating product value");
+
+
+            System.out.println(productID+":::"+cart.get(productID));
+
+
+            cart.put(productID,1+cart.get(productID));
+        }
+
+        else cart.put(productID,1);
+
+
 
         session.setAttribute("cart", cart);
+
         session.setAttribute("counter", cart.size());
+
         response.sendRedirect("/customer");
 
     }

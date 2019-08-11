@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+
 <html>
 
 <head>
@@ -21,6 +23,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
 </head>
+
 
 <body>
 <div>
@@ -38,7 +41,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Merchants</a>
+                    <a class="nav-link" href="/merchants">Merchants</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Products</a>
@@ -48,7 +51,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Hii <%=session.getAttribute("name")%></a>
+                    <a class="nav-link disabled" href="/merchants">Hii <%=session.getAttribute("name")%></a>
                 </li>
 
 
@@ -60,10 +63,30 @@
             </form>
             &nbsp &nbsp
             <form class="form-inline my-2 my-lg-0" action="/login" method="get">
-                <button type="button" class="btn btn-primary">Logout</button>
+                <button type="submit" class="btn btn-primary">Logout</button>
             </form>
         </div>
     </nav>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col"></th>
+            <th scope="col">Value</th>
+            <th scope="col">Info</th>
+        </tr>
+        </thead>
+        <c:forEach items="${requestScope.products}" var="product">
+            <tr>
+
+                <td scope="col"><c:out value="${product.name}" /><td>
+                <td scope="col"><c:out value="${product.price}" /><td>
+            </tr>
+        </c:forEach>
+    </table>
 </div>
 
 <!-- Modal HTML -->

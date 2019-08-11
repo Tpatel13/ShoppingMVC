@@ -20,6 +20,7 @@ public class login extends javax.servlet.http.HttpServlet {
 
     protected void doPost(HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
 
+
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String type = request.getParameter("type");

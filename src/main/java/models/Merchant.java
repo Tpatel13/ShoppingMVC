@@ -4,6 +4,13 @@ public class Merchant {
     private int id;
     private String email,pass,name;
 
+    public Merchant(int id,String name, String email, String pass) {
+        this.email = email;
+        this.pass = pass;
+        this.name = name;
+        this.id=id;
+    }
+
     public int getId() {
         return id;
     }
@@ -36,9 +43,5 @@ public class Merchant {
         this.name = name;
     }
 
-    public Merchant(String email, String pass, String name) {
-        this.email = email;
-        this.pass = pass;
-        this.name = name;
-    }
+
 }

@@ -21,7 +21,12 @@ public class getProducts extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
         HttpSession session=request.getSession();
+
+        if(request.getSession()==null){
+            response.sendRedirect("login");
+        }
         User user=(User)session.getAttribute("user");
         GetAllProducts products=new GetAllProducts();
 
