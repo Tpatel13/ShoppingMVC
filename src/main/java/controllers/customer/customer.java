@@ -20,6 +20,7 @@ public class customer extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -49,7 +50,7 @@ public class customer extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("customer.jsp");
 
             rd.forward(request, response);
-            ;
+
         }
     }
 }

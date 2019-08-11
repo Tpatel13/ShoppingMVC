@@ -29,7 +29,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="dad"><img src="/logo.png" /></a>
+    <a class="navbar-brand" href="dad"><img src="/logo.png"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,8 @@
                 <a class="nav-link" href="#">Orders</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Hii<%=session.getAttribute("name")%></a>
+                <a class="nav-link disabled" href="#">Hii<%=session.getAttribute("name")%>
+                </a>
             </li>
 
 
@@ -75,17 +76,16 @@
         <tr>
             <th scope="col">Product Name</th>
             <th scope="col">Value</th>
-            <th scope="col"></th>
             <th scope="col">Qualtitiy</th>
         </tr>
         </thead>
 
-        <c:forEach items="${requestScope.data}" var="product">
+        <c:forEach items="${sessionScope.data}" var="product">
             <tr>
-                <td scope="col"><c:out value="${product.key.name}" /><td>
-                <td scope="col"><c:out value="${product.key.price}" /><td>
-                <td scope="col"><c:out value="${product.value}" /><td>
-           </tr>
+                <td scope="col"><c:out value="${product.key.name}"/></td>
+                <td scope="col"><c:out value="${product.key.price}"/></td>
+                <td scope="col"><c:out value="${product.value}"/></td>
+            </tr>
 
         </c:forEach>
     </table>
@@ -96,11 +96,17 @@
 
             </div>
             <div class="col-sm">
+                <c:if test="${sessionScope.data!=null}">
+                    <form action="/emptyCart" method="get">
+                        <button type="submit" class="btn btn-warning">Empty Cart</button>
+                    </form>
+                </c:if>
 
             </div>
             <div class="col-sm">
-                <button type="button" class="btn btn-success">CheckOut</button>
-
+                <form action="/checkOut" method="post">
+                    <button type="submit" class="btn btn-success">CheckOut</button>
+                </form>
             </div>
         </div>
     </div>

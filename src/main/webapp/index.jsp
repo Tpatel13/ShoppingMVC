@@ -156,7 +156,7 @@
 
             </div>
             <div class="modal-footer">
-                <a href="#">Forgot Password?</a>
+                <a href="/register">New? Create Account</a>
             </div>
         </div>
     </div>

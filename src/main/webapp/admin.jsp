@@ -38,16 +38,16 @@
             <div></div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/admin">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/merchants">Merchants</a>
+                    <a class="nav-link" href="/admin">Merchants</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="/admin/products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="admin/orders">Orders</a>
                 </li>
 
                 <li class="nav-item">
@@ -69,7 +69,7 @@
     </nav>
 </div>
 
-<div>
+<div class="container">
     <table class="table">
         <thead>
         <tr>
@@ -82,8 +82,8 @@
         <c:forEach items="${requestScope.products}" var="product">
             <tr>
 
-                <td scope="col"><c:out value="${product.name}" /><td>
-                <td scope="col"><c:out value="${product.price}" /><td>
+                <td scope="col"><c:out value="${product.name}" /></td>
+                <td scope="col"><c:out value="${product.price}" /></td>
             </tr>
         </c:forEach>
     </table>

@@ -3,6 +3,7 @@ package controllers;
 import dao.LoginDao;
 import models.User;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -11,11 +12,16 @@ import java.io.IOException;
 
 @WebServlet("/login")
 public class login extends javax.servlet.http.HttpServlet {
+    @Override
+    public void init() throws ServletException {
+        super.init();
+
+    }
 
     protected void doGet(HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         HttpSession session=request.getSession();
         session.invalidate();
-      response.sendRedirect("index.jsp");
+        response.sendRedirect("index.jsp");
     }
 
     protected void doPost(HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {

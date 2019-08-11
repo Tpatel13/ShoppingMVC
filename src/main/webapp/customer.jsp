@@ -45,7 +45,7 @@
                 <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Orders</a>
+                <a class="nav-link" href="/customer/getOrders">Orders</a>
             </li>
 
             <li class="nav-item">
@@ -75,7 +75,6 @@
         <thead>
         <tr>
             <th scope="col">Product Name</th>
-
             <th scope="col">Value</th>
             <th scope="col">Info</th>
         </tr>
@@ -83,10 +82,10 @@
         <c:forEach items="${requestScope.products}" var="product">
             <tr>
 
-                <td scope="col"><c:out value="${product.name}" /><td>
-                <td scope="col"><c:out value="${product.price}" /><td>
+                <td scope="col"><c:out value="${product.name}" /></td>
+                <td scope="col"><c:out value="${product.price}" /></td>
 <%--                <td scope="col"><c:out value="${product.total}" /><td>--%>
-                <td scope="col"><a href="<c:url value="/addToCart?id=${product.productID}"/>" /><button type="button" class="btn btn-success">Buy</button></a></td>
+                <td scope="col"><a href="<c:url value="/addToCart?id=${product.productID}"/>" ><button type="button" class="btn btn-success">Buy</button></a></td>
             </tr>
         </c:forEach>
     </table>

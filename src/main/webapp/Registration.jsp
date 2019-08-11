@@ -136,7 +136,7 @@
                 <label><input type="radio" name="type" value="customer" checked>Customer</label>
             </div>
             <div class="radio container">
-                <label><input type="radio" name="type" value="merchants">Merchant</label>
+                <label><input type="radio" name="type" value="merchant">Merchant</label>
             </div>
         </div>
         <div class="form-group">

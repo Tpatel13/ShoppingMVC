@@ -3,7 +3,7 @@ package models;
 public class User {
 
     String name,type;
-
+    int id;
     public String getType() {
         return type;
     }
@@ -12,7 +12,7 @@ public class User {
         this.type = type;
     }
 
-    int id;
+
 
 
     public String getName() {

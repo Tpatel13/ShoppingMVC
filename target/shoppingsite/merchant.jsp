@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="/merchant/orders">Orders</a>
                 </li>
 
                 <li class="nav-item">
@@ -59,13 +59,13 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             &nbsp &nbsp
-            <form class="form-inline my-2 my-lg-0" action="/logout">
+            <form class="form-inline my-2 my-lg-0" action="/login">
                 <button type="submit" class="btn btn-primary">Logout</button>
             </form>
         </div>
     </nav>
 </div>
-<div>
+<div class="container">
     <table class="table">
         <thead>
         <tr>
@@ -73,13 +73,15 @@
             <th scope="col"></th>
             <th scope="col">Value</th>
             <th scope="col">Info</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <c:forEach items="${requestScope.products}" var="product">
             <tr>
-                <td scope="col"><c:out value="${product.name}" /><td>
-                <td scope="col"><c:out value="${product.price}" /><td>
-                <td scope="col"><c:out value="${product.info}" /><td>
+                <td scope="col"><c:out value="${product.name}" /></td>
+                <td scope="col"><c:out value="${product.price}" /></td>
+                <td scope="col"><c:out value="${product.info}" /></td>
+                <td scope="col"><a href="<c:url value="/deleteProduct?id=${product.productID}"/>" ><button type="button" class="btn btn-danger">Delete</button></a></td>
             </tr>
         </c:forEach>
     </table>
@@ -92,7 +94,7 @@
 
     </div>
     <div class="form-group">
-        <label >Password</label>
+        <label >Price</label>
         <input type="text" class="form-control" name="productPrice" placeholder="Price in $$">
     </div>
     <div class="form-group">

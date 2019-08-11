@@ -11,6 +11,12 @@ public class Product {
         this.name = name;
         this.info = info;
     }
+    public Product(double price, String name, String info,int productID) {
+        this.price = price;
+        this.name = name;
+        this.info = info;
+        this.productID=productID;
+    }
 
 
 

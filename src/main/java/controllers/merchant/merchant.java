@@ -24,7 +24,6 @@ public class merchant extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-
         HttpSession session = request.getSession();
         User user = null;
         user = (User) session.getAttribute("user");

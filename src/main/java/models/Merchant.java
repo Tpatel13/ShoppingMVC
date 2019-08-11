@@ -10,6 +10,12 @@ public class Merchant {
         this.name = name;
         this.id=id;
     }
+    public Merchant(int id,String name, String email) {
+        this.email = email;
+
+        this.name = name;
+        this.id=id;
+    }
 
     public int getId() {
         return id;

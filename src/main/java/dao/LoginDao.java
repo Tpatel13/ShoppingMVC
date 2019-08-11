@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class LoginDao {
 
-    public String[] checkLogin(String email, String password, String type) {
+    public String[] checkLogin(String name, String password, String type) {
 
 
         try {
@@ -14,8 +14,8 @@ public class LoginDao {
 
 
             PreparedStatement ps = null;
-            ps = con.prepareStatement("select id,name from `"+type+"` where email=? and password=?");
-            ps.setString(1, email);
+            ps = con.prepareStatement("select id,name from `"+type+"` where name=? and password=?");
+            ps.setString(1, name);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
             String data[]=new String[2];
