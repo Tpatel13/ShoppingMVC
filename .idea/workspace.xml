@@ -7,17 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f7452f-8e31-48b6-a53e-90bbbafdf618" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/SearchDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/customer/SearchCustomertByNameLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/merchant/SearchMerchantByNameLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/product/SearchProductByNameLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/SearchModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/search.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/merchants.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/merchants.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/orders.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/admin/orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/admin/orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin/orders.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +44,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="old-project-state" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JavaeeView">
@@ -72,11 +83,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao.customer" />
+      <recent name="dao.merchant" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
@@ -191,6 +206,7 @@
       <workItem from="1565472537855" duration="8917000" />
       <workItem from="1565484223967" duration="102000" />
       <workItem from="1565484340722" duration="26246000" />
+      <workItem from="1565631890759" duration="5221000" />
     </task>
     <servers />
   </component>
@@ -200,6 +216,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -208,6 +249,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

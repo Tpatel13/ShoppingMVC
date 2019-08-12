@@ -60,27 +60,57 @@
         </div>
     </nav>
 </div>
+
 <div class="container">
     <table class="table">
         <thead>
         <tr>
             <th scope="col">Customer Name</th>
             <th scope="col">Customer ID</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Product ID</th>
-            <th scope="col">Order Count</th>
+
         </tr>
         </thead>
-        <c:forEach items="${requestScope.orderList}" var="order">
+        <c:forEach items="${requestScope.customers}" var="order">
             <tr>
-                <td scope="col"><c:out value="${order.customer.name}" /></td>
-                <td scope="col"><c:out value="${order.customer.id}" /></td>
-                <td scope="col"><c:out value="${order.product.name}" /></td>
-                <td scope="col"><c:out value="${order.merchant.id}" /></td>
-                <td scope="col"><c:out value="${order.count}" /></td>
-                    <%--                <td scope="col"><a href="<c:url value="/deleteProduct=${product.productID}"/> ><button type="button" class="btn btn-danger">Delete</button><td>--%>
+                <td scope="col"><c:out value="${order.name}" /></td>
+                <td scope="col"><c:out value="${order.id}" /></td>
             </tr>
         </c:forEach>
     </table>
-</div></body>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Merchants ID</th>
+            <th scope="col">Merchants Password</th>
+
+        </tr>
+        </thead>
+        <c:forEach items="${requestScope.merchants}" var="order">
+            <tr>
+                <td scope="col"><c:out value="${order.id}" /></td>
+                <td scope="col"><c:out value="${order.name}" /></td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Product Name</th>
+
+        </tr>
+        </thead>
+        <c:forEach items="${requestScope.products}" var="order">
+            <tr>
+                <td scope="col"><c:out value="${order.name}" /></td>
+                <td scope="col"><c:out value="${order.price}" /></td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+</body>
 </html>

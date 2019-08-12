@@ -28,7 +28,7 @@ public class checkOut extends HttpServlet {
         post.order(user, data);
         session.removeAttribute("cart");
         session.removeAttribute("counter");
-        session.removeAttribute("totalCOunt");
+        session.removeAttribute("totalCount");
         response.sendRedirect("/customer");
     }
 
@@ -41,9 +41,14 @@ public class checkOut extends HttpServlet {
         }
 
 
+        if (session.getAttribute("cart") == null) {
+            session.setAttribute("cart", new HashMap<Integer, Integer>());
+        }
         HashMap<Integer, Integer> cart = (HashMap<Integer, Integer>) session.getAttribute("cart");
         GetProduct product = new GetProduct();
+
         HashMap<Product, Integer> data = new HashMap<Product, Integer>();
+
         cart.forEach((k, v) -> {
             data.put(product.getProductByID(k), v);
 
