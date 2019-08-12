@@ -28,7 +28,7 @@ public class checkOut extends HttpServlet {
         post.order(user, data);
         session.removeAttribute("cart");
         session.removeAttribute("counter");
-
+        session.removeAttribute("totalCOunt");
         response.sendRedirect("/customer");
     }
 

@@ -30,10 +30,8 @@ public class orders extends HttpServlet {
             response.sendRedirect("/login");
         } else {
 
-            GetAllOrders orders=new GetAllOrders();
-            ArrayList<Order> ordersList = orders.getOrders();
 
-            request.setAttribute("orderList", ordersList);
+            request.setAttribute("orderList", new GetAllOrders().getOrders());
 
             RequestDispatcher rd = request.getRequestDispatcher("orders.jsp");
             rd.forward(request, response);

@@ -49,7 +49,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Hii<%=session.getAttribute("name")%></a>
+                <a class="nav-link disabled" href="#">Hii <%=session.getAttribute("name")%></a>
             </li>
 
 
@@ -61,7 +61,10 @@
         </form>
         &nbsp &nbsp
         <form class="form-inline my-2 my-lg-0" action="/checkOut" method="get">
-            <button type="submit" class="btn btn-primary">Cart <c:out value='${sessionScope.counter}'/></button>
+            <button type="submit" class="btn btn-primary">Cart <c:out value='${sessionScope.counter}'/>
+                <c:out value='${sessionScope.totalCounter}'/>
+<%--               <% if(((int)session.getAttribute("totalCounter"))>0){%> (<c:out value='${sessionScope.totalCounter}'/>)<% }%>--%>
+            </button>
         </form>
         &nbsp &nbsp
         <form class="form-inline my-2 my-lg-0" action="/login" method="get">
@@ -84,7 +87,6 @@
 
                 <td scope="col"><c:out value="${product.name}" /></td>
                 <td scope="col"><c:out value="${product.price}" /></td>
-<%--                <td scope="col"><c:out value="${product.total}" /><td>--%>
                 <td scope="col"><a href="<c:url value="/addToCart?id=${product.productID}"/>" ><button type="button" class="btn btn-success">Buy</button></a></td>
             </tr>
         </c:forEach>

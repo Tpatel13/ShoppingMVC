@@ -7,17 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f7452f-8e31-48b6-a53e-90bbbafdf618" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/merchant/merchants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/merchants.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/merchants.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/orders.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/admin/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/admin/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin/merchants.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin/merchants.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shoppingsite/admin/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/admin/orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/admin/orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/addToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/customer/checkOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/admin/orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/admin/orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/addToCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/customer/checkOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/admin/orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/addToCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/WEB-INF/classes/controllers/customer/checkOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shoppingsite/customer.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +190,7 @@
       <workItem from="1565470995535" duration="1507000" />
       <workItem from="1565472537855" duration="8917000" />
       <workItem from="1565484223967" duration="102000" />
-      <workItem from="1565484340722" duration="23238000" />
+      <workItem from="1565484340722" duration="26246000" />
     </task>
     <servers />
   </component>
